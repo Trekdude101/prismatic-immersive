@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -18,11 +19,7 @@
   <header class="site-header" id="site-header">
     <nav class="nav container" aria-label="Primary navigation">
       <a href="#" class="nav__logo" aria-label="Prismatic Immersive — Home">
-        <svg class="nav__logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <polygon points="16,2 28,10 28,22 16,30 4,22 4,10" fill="#2563EB" opacity="0.9"/>
-          <polygon points="16,6 24,12 24,20 16,26 8,20 8,12" fill="#06B6D4" opacity="0.7"/>
-          <polygon points="16,10 20,13 20,19 16,22 12,19 12,13" fill="#FFFFFF" opacity="0.9"/>
-        </svg>
+        <img class="nav__logo-icon" src="assets/images/logo.png" alt="" width="32" height="32" aria-hidden="true">
         <span class="nav__logo-text">Prismatic Immersive</span>
       </a>
 
@@ -43,6 +40,16 @@
   <main id="main">
     <!-- Hero -->
     <section class="hero">
+      <div class="hero__slides" aria-hidden="true">
+        <div class="hero__slide active" style="background-image: url('assets/images/hero.png')"></div>
+        <div class="hero__slide" style="background-image: url('assets/images/hero2.png')"></div>
+        <div class="hero__slide" style="background-image: url('assets/images/hero3.png')"></div>
+        <div class="hero__slide" style="background-image: url('assets/images/hero4.png')"></div>
+        <div class="hero__slide" style="background-image: url('assets/images/hero5.png')"></div>
+        <div class="hero__slide" style="background-image: url('assets/images/hero6.png')"></div>
+        <div class="hero__slide" style="background-image: url('assets/images/hero7.jpg')"></div>
+      </div>
+      <div class="hero__overlay"></div>
       <div class="container hero__inner">
         <p class="hero__eyebrow fade-in-up">Prismatic Immersive</p>
         <h1 class="hero__title fade-in-up" style="animation-delay: 0.1s">Building Virtual Realities</h1>
@@ -80,12 +87,8 @@
             </div>
           </div>
         </div>
-        <div class="about__visual reveal" aria-hidden="true">
-          <div class="about__decoration">
-            <div class="about__decoration-shape about__decoration-shape--1"></div>
-            <div class="about__decoration-shape about__decoration-shape--2"></div>
-            <div class="about__decoration-shape about__decoration-shape--3"></div>
-          </div>
+        <div class="about__visual reveal">
+          <img class="about__image" src="assets/images/about.png" alt="In-game screenshot of a Prismatic Immersive VR experience" width="640" height="360">
         </div>
       </div>
     </section>
@@ -96,28 +99,51 @@
         <h2 class="section__title section__title--center reveal">Anything Is Possible</h2>
         <div class="services__grid">
           <article class="card card--purple reveal">
-            <h3 class="card__title">VR Entertainment</h3>
-            <p class="card__text">
-              Step into our free-roam arenas and explore vast virtual worlds with friends, family, or colleagues. Our multiplayer experiences let groups share the same virtual space — walking, interacting, and playing together without wires or boundaries.
-            </p>
-            <ul class="card__tags" aria-label="Features">
-              <li class="card__tag">Free-Roam</li>
-              <li class="card__tag">Multiplayer</li>
-              <li class="card__tag">Shared Worlds</li>
-              <li class="card__tag">Arena-Scale</li>
-            </ul>
+            <img class="card__image" src="assets/images/vr-entertainment.png" alt="Player with VR headset and controller in a free-roam arena" width="640" height="360">
+            <div class="card__body">
+              <h3 class="card__title">VR Entertainment</h3>
+              <p class="card__text">
+                Step into our free-roam arenas and explore vast virtual worlds with friends, family, or colleagues. Our multiplayer experiences let groups share the same virtual space — walking, interacting, and playing together without wires or boundaries.
+              </p>
+              <ul class="card__tags" aria-label="Features">
+                <li class="card__tag">Free-Roam</li>
+                <li class="card__tag">Multiplayer</li>
+                <li class="card__tag">Shared Worlds</li>
+                <li class="card__tag">Arena-Scale</li>
+              </ul>
+              <a href="https://vradventures.nl" target="_blank" rel="noopener" class="btn btn--primary card__btn">Visit VR Adventures</a>
+            </div>
           </article>
           <article class="card card--cyan reveal">
-            <h3 class="card__title">Serious VR</h3>
-            <p class="card__text">
-              Beyond entertainment, we apply our VR expertise to training, simulation, and business applications. From safety drills to complex procedure rehearsals, our serious VR solutions deliver measurable results in environments too costly or dangerous to replicate in real life.
-            </p>
-            <ul class="card__tags" aria-label="Features">
-              <li class="card__tag">Training</li>
-              <li class="card__tag">Simulation</li>
-              <li class="card__tag">Enterprise</li>
-              <li class="card__tag">Safety</li>
-            </ul>
+            <img class="card__image" src="assets/images/serious-vr.png" alt="VR training session with instructor and participants" width="640" height="640">
+            <div class="card__body">
+              <h3 class="card__title">Serious VR</h3>
+              <p class="card__text">
+                Beyond entertainment, we apply our VR expertise to training, simulation, and business applications. From safety drills to complex procedure rehearsals, our serious VR solutions deliver measurable results in environments too costly or dangerous to replicate in real life.
+              </p>
+              <ul class="card__tags" aria-label="Features">
+                <li class="card__tag">Training</li>
+                <li class="card__tag">Simulation</li>
+                <li class="card__tag">Enterprise</li>
+                <li class="card__tag">Safety</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card card--accent reveal">
+            <img class="card__image" src="assets/images/projects.png" alt="Immersive go-kart experience with projected leaderboard" width="640" height="360">
+            <div class="card__body">
+              <h3 class="card__title">Immersive Experiences</h3>
+              <p class="card__text">
+                Have a cool idea? We love collaborating on creative IX projects — from hardware design and fabrication to custom software and beyond. Whether you're an SME looking for an edge or a creative studio with a bold concept, we'll bring it to life.
+              </p>
+              <ul class="card__tags" aria-label="Features">
+                <li class="card__tag">Hardware Design</li>
+                <li class="card__tag">Software</li>
+                <li class="card__tag">Fabrication</li>
+                <li class="card__tag">Creative</li>
+              </ul>
+              <a href="#contact" class="btn btn--primary card__btn">Get in Touch</a>
+            </div>
           </article>
         </div>
       </div>
@@ -158,11 +184,7 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <svg class="footer__logo-icon" width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <polygon points="16,2 28,10 28,22 16,30 4,22 4,10" fill="#2563EB" opacity="0.9"/>
-          <polygon points="16,6 24,12 24,20 16,26 8,20 8,12" fill="#06B6D4" opacity="0.7"/>
-          <polygon points="16,10 20,13 20,19 16,22 12,19 12,13" fill="#FFFFFF" opacity="0.9"/>
-        </svg>
+        <img class="footer__logo-icon" src="assets/images/logo.png" alt="" width="24" height="24" aria-hidden="true">
         <span class="footer__name">Prismatic Immersive</span>
       </div>
       <p class="footer__copy">&copy; 2026 Prismatic Immersive. All rights reserved.</p>

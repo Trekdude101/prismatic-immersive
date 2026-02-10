@@ -82,7 +82,19 @@
     });
   }
 
-  // ── 4. Active nav link based on scroll position ─────────
+  // ── 4. Hero slideshow ────────────────────────────────────
+  var slides = document.querySelectorAll('.hero__slide');
+  if (slides.length > 1) {
+    var current = 0;
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var interval = prefersReducedMotion ? null : setInterval(function () {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 5000);
+  }
+
+  // ── 5. Active nav link based on scroll position ─────────
   function updateActiveLink() {
     var scrollPos = window.scrollY + window.innerHeight / 3;
 
