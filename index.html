@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prismatic Immersive — Building Virtual Realities</title>
+  <meta name="description" content="Prismatic Immersive builds large-scale free-roam VR experiences. Pioneers in location-based VR entertainment and serious VR applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="#" class="nav__logo" aria-label="Prismatic Immersive — Home">
+        <svg class="nav__logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <polygon points="16,2 28,10 28,22 16,30 4,22 4,10" fill="#6C3CE1" opacity="0.9"/>
+          <polygon points="16,6 24,12 24,20 16,26 8,20 8,12" fill="#06B6D4" opacity="0.7"/>
+          <polygon points="16,10 20,13 20,19 16,22 12,19 12,13" fill="#FFFFFF" opacity="0.9"/>
+        </svg>
+        <span class="nav__logo-text">Prismatic Immersive</span>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="hero__eyebrow fade-in-up">Prismatic Immersive</p>
+        <h1 class="hero__title fade-in-up" style="animation-delay: 0.1s">Building Virtual Realities</h1>
+        <p class="hero__subtitle fade-in-up" style="animation-delay: 0.2s">Jump into the awesome experience that is large-scale free-roam VR.</p>
+        <div class="hero__ctas fade-in-up" style="animation-delay: 0.3s">
+          <a href="#services" class="btn btn--primary">Explore Our Work</a>
+          <a href="#contact" class="btn btn--outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <div class="about__content reveal">
+          <h2 class="section__title">Pioneers in Location Based VR</h2>
+          <p class="about__text">
+            For over eight years, Prismatic Immersive has been at the forefront of location-based virtual reality. We design, develop, and deploy fully immersive free-roam VR experiences that push the boundaries of what's possible.
+          </p>
+          <p class="about__text">
+            Our self-built ecosystem — from hardware integration to real-time multiplayer software — lets us create shared virtual worlds where groups of people explore, play, and collaborate together in physical space.
+          </p>
+          <div class="about__stats">
+            <div class="stat">
+              <span class="stat__number">8+</span>
+              <span class="stat__label">Years of Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">Self-Built</span>
+              <span class="stat__label">Full Ecosystem</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">Multi-User</span>
+              <span class="stat__label">Shared Virtual Worlds</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__visual reveal" aria-hidden="true">
+          <div class="about__decoration">
+            <div class="about__decoration-shape about__decoration-shape--1"></div>
+            <div class="about__decoration-shape about__decoration-shape--2"></div>
+            <div class="about__decoration-shape about__decoration-shape--3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services section section--alt" id="services">
+      <div class="container">
+        <h2 class="section__title section__title--center reveal">Anything Is Possible</h2>
+        <div class="services__grid">
+          <article class="card card--purple reveal">
+            <h3 class="card__title">VR Entertainment</h3>
+            <p class="card__text">
+              Step into our free-roam arenas and explore vast virtual worlds with friends, family, or colleagues. Our multiplayer experiences let groups share the same virtual space — walking, interacting, and playing together without wires or boundaries.
+            </p>
+            <ul class="card__tags" aria-label="Features">
+              <li class="card__tag">Free-Roam</li>
+              <li class="card__tag">Multiplayer</li>
+              <li class="card__tag">Shared Worlds</li>
+              <li class="card__tag">Arena-Scale</li>
+            </ul>
+          </article>
+          <article class="card card--cyan reveal">
+            <h3 class="card__title">Serious VR</h3>
+            <p class="card__text">
+              Beyond entertainment, we apply our VR expertise to training, simulation, and business applications. From safety drills to complex procedure rehearsals, our serious VR solutions deliver measurable results in environments too costly or dangerous to replicate in real life.
+            </p>
+            <ul class="card__tags" aria-label="Features">
+              <li class="card__tag">Training</li>
+              <li class="card__tag">Simulation</li>
+              <li class="card__tag">Enterprise</li>
+              <li class="card__tag">Safety</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title section__title--center reveal">Let's Build Something Together</h2>
+        <div class="contact__card reveal">
+          <div class="contact__item">
+            <svg class="contact__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M22 4L12 13L2 4"/>
+            </svg>
+            <div>
+              <h3 class="contact__label">Email</h3>
+              <a href="mailto:hello@prismatic-immersive.com" class="contact__link">hello@prismatic-immersive.com</a>
+            </div>
+          </div>
+          <div class="contact__divider" aria-hidden="true"></div>
+          <div class="contact__item">
+            <svg class="contact__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 1 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <div>
+              <h3 class="contact__label">Address</h3>
+              <address class="contact__address">Energieweg 11a, 9743AN, Groningen,<br>The Netherlands</address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <svg class="footer__logo-icon" width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <polygon points="16,2 28,10 28,22 16,30 4,22 4,10" fill="#6C3CE1" opacity="0.9"/>
+          <polygon points="16,6 24,12 24,20 16,26 8,20 8,12" fill="#06B6D4" opacity="0.7"/>
+          <polygon points="16,10 20,13 20,19 16,22 12,19 12,13" fill="#FFFFFF" opacity="0.9"/>
+        </svg>
+        <span class="footer__name">Prismatic Immersive</span>
+      </div>
+      <p class="footer__copy">&copy; 2026 Prismatic Immersive. All rights reserved.</p>
+      <a href="#" class="footer__top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 15l-6-6-6 6"/>
+        </svg>
+        Top
+      </a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
