@@ -8,8 +8,8 @@
   --color-bg-off:       #FAFAFA;
   --color-text:         #1A1A2E;
   --color-text-secondary: #555555;
-  --color-accent:       #6C3CE1;
-  --color-accent-hover: #5a2dc7;
+  --color-accent:       #2563EB;
+  --color-accent-hover: #1D4ED8;
   --color-cyan:         #06B6D4;
   --color-cyan-hover:   #0891b2;
   --color-footer-bg:    #1A1A2E;
@@ -481,7 +481,7 @@ body {
 }
 
 .card--purple .card__tag {
-  background-color: rgba(108, 60, 225, 0.08);
+  background-color: rgba(37, 99, 235, 0.08);
   color: var(--color-accent);
 }
 
