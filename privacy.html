@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Prismatic Immersive</title>
+  <meta name="description" content="Privacy policy for Prismatic Immersive and its internal tools.">
+  <link rel="canonical" href="https://prismatic-immersive.com/privacy">
+  <meta name="robots" content="noindex">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .privacy { max-width: 720px; margin: 0 auto; padding: var(--space-3xl) var(--space-lg) var(--space-2xl); }
+    .privacy h1 { font-size: var(--font-size-2xl); margin-bottom: var(--space-sm); }
+    .privacy h2 { font-size: var(--font-size-xl); margin-top: var(--space-xl); margin-bottom: var(--space-xs); }
+    .privacy p, .privacy ul { color: var(--color-text-secondary); line-height: 1.7; margin-bottom: var(--space-sm); }
+    .privacy ul { padding-left: var(--space-md); }
+    .privacy .updated { color: var(--color-text-secondary); font-size: var(--font-size-sm); margin-bottom: var(--space-xl); }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="/" class="nav__logo" aria-label="Prismatic Immersive — Home">
+        <img class="nav__logo-icon" src="assets/images/logo.png" alt="" width="32" height="32" aria-hidden="true">
+        <span class="nav__logo-text">Prismatic Immersive</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="privacy">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: April 8, 2026</p>
+
+      <h2>Who we are</h2>
+      <p>Prismatic Immersive is a sole proprietorship based in Groningen, The Netherlands, operated by Wilco Vos. This policy covers our website and internal productivity tools.</p>
+
+      <h2>What data we access</h2>
+      <p>We use the Google Gmail API (read-only) in an internal tool to generate daily email summaries for the business owner. This tool:</p>
+      <ul>
+        <li>Accesses Gmail messages using the <code>gmail.readonly</code> scope</li>
+        <li>Reads email metadata (sender, subject, date) and message bodies</li>
+        <li>Does not modify, send, or delete any emails</li>
+        <li>Does not access any third-party user accounts — only accounts owned by the business</li>
+      </ul>
+
+      <h2>How we use data</h2>
+      <p>Email content is processed locally and via the Anthropic Claude API to categorize messages by urgency. Summaries are sent to the business owner via WhatsApp. No email content is stored permanently beyond short-term local logs retained for up to 30 days.</p>
+
+      <h2>Data sharing</h2>
+      <p>Email content is sent to the Anthropic API for analysis. No data is shared with any other third parties, sold, or used for advertising.</p>
+
+      <h2>Data retention</h2>
+      <p>Briefing history (message IDs, summaries, and action status) is stored locally for up to 30 days to enable follow-up tracking. Full email bodies are not retained.</p>
+
+      <h2>Third-party users</h2>
+      <p>This application is for internal use only and does not process data from external users.</p>
+
+      <h2>Contact</h2>
+      <p>For questions about this policy, contact <a href="mailto:hello@prismatic-immersive.com">hello@prismatic-immersive.com</a>.</p>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
